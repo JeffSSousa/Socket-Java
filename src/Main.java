@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -13,10 +14,11 @@ public class Main {
 		
 		
 		InputStreamReader inputReader = new InputStreamReader(socket.getInputStream());
+		PrintStream saida = new PrintStream(null)
 		BufferedReader reader = new BufferedReader(inputReader);
 		String x;
 		while((x = reader.readLine()) != null) {
-			System.out.println("Servidor :" + x);
+			saida.println("Servidor :" + x);
 			
 		}
 		

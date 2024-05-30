@@ -14,7 +14,7 @@ public class Main {
 		
 		
 		InputStreamReader inputReader = new InputStreamReader(socket.getInputStream());
-		PrintStream saida = new PrintStream(null)
+		PrintStream saida = new PrintStream(socket.getOutputStream());
 		BufferedReader reader = new BufferedReader(inputReader);
 		String x;
 		while((x = reader.readLine()) != null) {

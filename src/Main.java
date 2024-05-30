@@ -18,7 +18,7 @@ public class Main {
 		BufferedReader reader = new BufferedReader(inputReader);
 		String x;
 		while((x = reader.readLine()) != null) {
-			saida.println("Servidor :" + x);
+			saida.println("Servidor: " + x);
 			
 		}
 		

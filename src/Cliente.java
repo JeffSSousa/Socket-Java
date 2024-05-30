@@ -8,6 +8,12 @@ public class Cliente {
 		
 	  Socket socket= new Socket("Localhost",4000);
 	  Scanner sc = new Scanner(System.in);
+	  
+	  
+	  
+	 ClienteThread clienteThread =  new ClienteThread(socket);
+	 clienteThread.start();
+	  
 	  PrintStream saida = new PrintStream(socket.getOutputStream());
 	  saida.println(sc.nextLine());
 	  

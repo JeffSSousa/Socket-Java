@@ -17,6 +17,7 @@ public class Cliente {
 	  PrintStream saida = new PrintStream(socket.getOutputStream());
 	  saida.println(sc.nextLine());
 	  
+	  System.out.println();
 	}
 
 }

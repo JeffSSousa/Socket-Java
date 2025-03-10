@@ -14,8 +14,8 @@ public class Cliente {
 	 ClienteThread clienteThread =  new ClienteThread(socket);
 	 clienteThread.start();
 	  
-	  PrintStream saida = new PrintStream(socket.getOutputStream());
-	  saida.println(sc.nextLine());
+	  PrintStream exit = new PrintStream(socket.getOutputStream());
+	  exit.println(sc.nextLine());
 	  
 	  System.out.println();
 	}
